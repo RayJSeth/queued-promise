@@ -1,0 +1,40 @@
+{
+  "name": "queued-promise",
+  "version": "0.0.1",
+  "description": "Simple wrapper to obtain a reference to a promise without automatically running it. Useful for parallelizing tasks without encountering unhandled promise rejections between the time of promise referencing and assigning a listener.",
+  "main": "index.js",
+  "scripts": {
+    "build": "npx tsoa routes && npx tsoa spec && npx tsc",
+    "test": "jest",
+    "test:coverage": "jest --coverage",
+    "prettier": "prettier ./src/ --check",
+    "prettier:fix": "prettier ./src/ --write",
+    "lint": "eslint ./src",
+    "lint:fix": "eslint ./src --fix",
+    "clean": "rm -rf dist/",
+    "prepare-husky": "husky install",
+    "precommit": "npm run prettier && npm run lint && npm run test:coverage"
+  },
+  "keywords": [
+    "promise",
+    "async",
+    "deferral",
+    "defer",
+    "deferred",
+    "queued",
+    "queue"
+  ],
+  "author": "Seth Johnson (He/Him)",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/jest": "^29.5.10",
+    "@types/node": "^20.10.0",
+    "@typescript-eslint/eslint-plugin": "^6.12.0",
+    "eslint": "^8.54.0",
+    "husky": "^8.0.3",
+    "jest": "^29.7.0",
+    "prettier": "^3.1.0",
+    "ts-jest": "^29.1.1",
+    "typescript": "^5.3.2"
+  }
+}
