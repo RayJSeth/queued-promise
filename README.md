@@ -1,4 +1,4 @@
-# Promise Chain Declaration (npm Module)
+# queued-promise
 
 [![npm version](https://badge.fury.io/js/queued-promise.svg)](https://badge.fury.io/js/queued-promise)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
